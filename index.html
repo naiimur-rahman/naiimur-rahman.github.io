@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio | Researcher & Analyst</title>
+    <style>
+        :root {
+            --primary-color: #1a252f;
+            --secondary-color: #2c3e50;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .location {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        section {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            margin-bottom: 30px;
+            border-top: 3px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        section:hover {
+            border-top: 3px solid var(--accent-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            margin-bottom: 25px;
+            display: inline-block;
+            font-size: 1.5rem;
+        }
+
+        .philosophy-box {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 20px;
+            background: #f8fcfd;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .philosophy-box p {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .philosophy-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-item {
+            background: var(--bg-color);
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .project-card {
+            border: 1px solid #eaeaea;
+            padding: 25px;
+            border-radius: 6px;
+            background: #fff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+        }
+
+        .project-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .project-card .tags {
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            border-top: 1px solid #eaeaea;
+            padding-top: 20px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Independent Researcher</h1>
+        <p class="subtitle">Verification, Analysis, & Quality Assurance</p>
+        <p class="location">Dhaka, Bangladesh</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Professional Philosophy</h2>
+            <div class="philosophy-box">
+                <p>I approach problem-solving with rigorous skepticism and a dedication to primary research. In environments where assumptions are often taken as facts, I serve as the final checkpoint for truth and data integrity.</p>
+                <p>I am not always right—no one is—but my fundamental baseline is an uncompromising, relentless drive for accuracy. I systematically double-check variables, verify claims, and strive to eliminate blind spots.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <strong>Fact-Verification</strong><br>
+                    <span style="font-size: 0.9rem; color: #555;">Cross-referencing and validating complex data points against primary sources.</span>
+                </div>
+                <div class="skill-item">
+                    <strong>Critical Analysis</strong><br>
+                    <span style="font-size: 0.9rem; color: #555;">Deconstructing arguments to identify logical fallacies or hidden variables.</span>
+                </div>
+                <div class="skill-item">
+                    <strong>Process Auditing</strong><br>
+                    <span style="font-size: 0.9rem; color: #555;">Reviewing workflows and output to ensure a high standard of accuracy is maintained.</span>
+                </div>
+                <div class="skill-item">
+                    <strong>Deep-Dive Research</strong><br>
+                    <span style="font-size: 0.9rem; color: #555;">Conducting exhaustive investigations to build a comprehensive understanding of nuanced topics.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Case Studies in Accuracy</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Data Integrity & Verification Audit</h3>
+                    <div class="tags">QUALITY ASSURANCE | RESEARCH | DATA VALIDATION</div>
+                    <p>Spearheaded a comprehensive review of existing operational datasets to identify and correct critical inaccuracies. By applying a skeptical framework to long-standing assumptions, I established a new baseline of truth that significantly improved the reliability of subsequent analytical outputs.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Fact-Checking Protocol Development</h3>
+                    <div class="tags">SYSTEM DESIGN | CRITICAL THINKING | MITIGATION</div>
+                    <p>Designed and implemented a rigorous, multi-step verification methodology to prevent misinformation from impacting final project deliverables. This system standardized the process of double-checking claims, ensuring that the pursuit of accuracy remained central to all team operations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I am available for projects that require a sharp eye, deep research, and a commitment to getting it right. Let's collaborate to solve complex problems.</p>
+            <p style="margin-top: 15px; padding: 15px; background: var(--bg-color); border-radius: 6px; display: inline-block;">
+                <strong>Email:</strong> <a href="mailto:inquiries@researcher-dhaka.com">inquiries@researcher-dhaka.com</a><br>
+                <strong>LinkedIn:</strong> <a href="#">linkedin.com/in/research-professional</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026. Always striving for accuracy.</p>
+    </footer>
+
+</body>
+</html>
