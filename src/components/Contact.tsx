@@ -28,7 +28,7 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://facebook.com/naiimurr"
+              href="https://facebook.com/naimur.env"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -44,7 +44,7 @@ const Contact = () => {
               X <MdArrowOutward />
             </a>
             <a
-              href="https://www.instagram.com/nai_mur_"
+              href="https://www.instagram.com/naimur.env"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
